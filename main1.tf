@@ -1,6 +1,6 @@
 ############# provider ##########
 provider "aws" {
-    region = "us-west-1"
+    region = "us-east-1"
 } 
 
  terraform {
@@ -55,9 +55,9 @@ resource "aws_vpc" "first-vpc" {
 
 ############## instance ##################
 resource "aws_instance" "jenkins1" {
-  ami                       = "ami-017c001a88dd93847"
+  ami = "ami-09d3b3274b6c5d4aa" 
   instance_type             = "t2.medium"
-  key_name                  = "ravi"
+  key_name                  = "main"
   
   
 
